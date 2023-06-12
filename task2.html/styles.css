@@ -1,0 +1,87 @@
+body {
+  background-color: bisque;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  width: 450px;
+}
+
+todo-container {
+  text-align: upper left;
+  width: 300px;
+  margin: 0px auto;
+}
+
+#todo-input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#priority-select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+#deadline-input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#add-button {
+  width: 100%;
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+  counter-reset: todo-counter;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  counter-increment: todo-counter;
+}
+
+.todo-item span {
+  margin-right: 10px;
+}
+
+/* Add numbering */
+.todo-item::before {
+  content: counter(todo-counter);
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+
+.priority-high {
+  color: rgba(250, 33, 22, 0.695);
+  font-weight: bold;
+}
+
+.priority-medium {
+  color: rgb(69, 157, 18);
+}
+
+.priority-low {
+  color: rgba(22, 50, 233, 0.647);
+}
+.delete-button{
+color: rgb(235, 13, 42);
+}

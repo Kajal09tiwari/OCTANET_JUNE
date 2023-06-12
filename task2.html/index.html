@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> To-Do List </title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+  <h1>  &nbsp;&nbsp;To-Do List &nbsp;&nbsp;</h1>
+  <div id="todo-container"style="width: 450px;">
+    <input type="text" id="todo-input" placeholder= " &nbsp;&nbsp; &nbsp;&nbsp;Add a task... &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;">
+    <select id="priority-select" >
+      <option value="High"> &nbsp;&nbsp;&nbsp; High&nbsp;&nbsp;&nbsp; </option> 
+      <option value="Medium"> &nbsp;&nbsp;&nbsp; Medium &nbsp;&nbsp;&nbsp; </option>
+      <option value="Low"> &nbsp;&nbsp;&nbsp; Low&nbsp;&nbsp;&nbsp; </option>
+    </select>
+    <span id="priority-label"></span>
+    <label for="deadline-input" id="deadline-label">
+    <input type="date"   id="deadline-input">
+    <button id="add-button">&nbsp;&nbsp;Add &nbsp;&nbsp;</button>
+    <ul id="todo-list"></ul>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
